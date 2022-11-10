@@ -1,9 +1,7 @@
-streamlit
 pandas
 json
 plotly
 bs4
-python-dateutil
 pillow
 openpyxl
 requests
