@@ -329,42 +329,43 @@ with col1:
     if basket0 or st.session_state.basket0:
 
         st.session_state.basket0=True
-
+        try:
     # if st.button('Calculate basket price'):
         #st.write('Please wait ⏳')
 
-        df = get_price(urls)
+          df = get_price(urls)
 
-        # cleaning the prices
-        df['price_clean'] = df['price'].apply(lambda x:clean_price(x))
+          # cleaning the prices
+          df['price_clean'] = df['price'].apply(lambda x:clean_price(x))
 
-        # changing data type to float
-        df['price_clean'] = df['price_clean'].astype('float')
+          # changing data type to float
+          df['price_clean'] = df['price_clean'].astype('float')
 
-        # extracting cleaned prices to list
-        col_list = df.price_clean.values.tolist()
+          # extracting cleaned prices to list
+          col_list = df.price_clean.values.tolist()
 
-        # summing the prices to get the total price of the food basket
-        final_price_lbp = round(sum(col_list))
-        final_price_usd = round(final_price_lbp/30300, 2)
-        #st.write(round(final_price))
-        #st.write('Total basket price in USD: ', final_price_usd)
+          # summing the prices to get the total price of the food basket
+          final_price_lbp = round(sum(col_list))
+          final_price_usd = round(final_price_lbp/30300, 2)
+          #st.write(round(final_price))
+          #st.write('Total basket price in USD: ', final_price_usd)
 
-        ### Output ###
-        st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial;font-size:18px;border-radius:0%;">Your Selected Subsidy Food Basket Price (USD):</p>', unsafe_allow_html=True)
-
-
-
-        st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial Black;font-size:18px;border-radius:0%;">'+ str(final_price_usd) + '</p>', unsafe_allow_html=True)
+          ### Output ###
+          st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial;font-size:18px;border-radius:0%;">Your Selected Subsidy Food Basket Price (USD):</p>', unsafe_allow_html=True)
 
 
 
-        st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial;font-size:18px;border-radius:0%;">Number of Households Served:</p>', unsafe_allow_html=True)
+          st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial Black;font-size:18px;border-radius:0%;">'+ str(final_price_usd) + '</p>', unsafe_allow_html=True)
 
 
 
-        st.markdown(f'<p style="text-align:center; color:#8F00FF;font-family:Arial Black;font-size:25px;border-radius:0%;">'+ str(round(int(budget)/final_price_usd)) + '</p>', unsafe_allow_html=True)
+          st.markdown(f'<p style="text-align:center; color:#0d0d0c;font-family:Arial;font-size:18px;border-radius:0%;">Number of Households Served:</p>', unsafe_allow_html=True)
 
+
+
+          st.markdown(f'<p style="text-align:center; color:#8F00FF;font-family:Arial Black;font-size:25px;border-radius:0%;">'+ str(round(int(budget)/final_price_usd)) + '</p>', unsafe_allow_html=True)
+        except:
+          st.write('Please select basket choices.')
 with col2:
     # Input supplier URL
     supplier = st.text_input('Supplier URL', value = 'www.spinneyslebanon.com')
