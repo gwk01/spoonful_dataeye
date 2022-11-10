@@ -1,2 +1,2 @@
 # spoonful_dataeye
-UN Big Data Hackathon Streamlit Application
+Data Eye Team UN Big Data Hackathon Streamlit Application
