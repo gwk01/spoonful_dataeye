@@ -6,7 +6,7 @@ python-dateutil
 pillow
 openpyxl
 requests
-requests_html
+requests-html
 numpy
 datetime
 regex
