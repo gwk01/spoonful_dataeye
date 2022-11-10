@@ -365,7 +365,7 @@ with col1:
 
           st.markdown(f'<p style="text-align:center; color:#8F00FF;font-family:Arial Black;font-size:25px;border-radius:0%;">'+ str(round(int(budget)/final_price_usd)) + '</p>', unsafe_allow_html=True)
         except:
-          st.write('Please select basket choices.')
+          pass
 with col2:
     # Input supplier URL
     supplier = st.text_input('Supplier URL', value = 'www.spinneyslebanon.com')
