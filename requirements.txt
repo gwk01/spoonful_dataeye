@@ -1,5 +1,4 @@
 pandas
-json
 plotly
 bs4
 pillow
