@@ -57,7 +57,7 @@ m = st.markdown("""
 
         border-radius:8px;
 
-        font-size:15px;
+        font-size:20px;
 
         font-weight: bold;
 
@@ -370,7 +370,7 @@ with col2:
     supplier = st.text_input('Supplier URL', value = 'www.spinneyslebanon.com')
 
     optimized_prices = []
-    basket1 = st.button("Get Spoonful's Recommendation")
+    basket1 = st.button("Spoonful's Recommendation")
     if "basket1" not in st.session_state:
         st.session_state.basket1=False
     if basket1 or st.session_state.basket1:
