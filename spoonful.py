@@ -514,7 +514,7 @@ with col2:
         if oil_choice != 'None of these brands':
             urls = ['https://www.spinneyslebanon.com/spinneys-sunflower-oil-1-7l.html',
             'https://www.spinneyslebanon.com/sunflower-oil-362165-v001.html',
-            'https://www.spinneyslebanon.com/sunflower-oil-541287-v001.html'
+            'https://www.spinneyslebanon.com/lesieur-sunflower-oil-2l.html'
             ]
 
             # scrape urls
