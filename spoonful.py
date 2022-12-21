@@ -272,7 +272,7 @@ with col2:
         elif pasta_choice == 'Barilla':
             urls.append('https://www.spinneyslebanon.com/barilla-spaghetti-n-7-500g-137383-v001.html')
         elif pasta_choice == 'Pezzullo':
-            urls.append('https://www.spinneyslebanon.com/spaghetti-pasta-sp-pr-555438-v002.html')
+            urls.append('https://www.spinneyslebanon.com/spaghetti-pasta-sp-pr-555438-v001.html')
         else:
             pass
 
