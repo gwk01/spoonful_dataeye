@@ -674,7 +674,7 @@ fig.add_scattergeo(
 
 with col3:
 
-    fig.update_layout (title_text = 'Lebanese Districts Poverty Predictions in 2022 <br> by Deploying Satellite Imagery Data on Random Forest Regressor', title_x = 0.55,plot_bgcolor='Light Grey', showlegend=False,
+    fig.update_layout (title_text = 'Lebanese Districts Poverty Predictions in 2022 <br> by Deploying Satellite Imagery Data on Random Forest Regressor',plot_bgcolor='Light Grey', showlegend=False,
 
                                                 title_font_family="Arial",title_font_size=18)
 
