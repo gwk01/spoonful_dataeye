@@ -415,7 +415,7 @@ with col2:
         if pasta_choice != 'None of these brands':
             urls = ['https://www.spinneyslebanon.com/panzani-spaghetti-pasta-500g.html',
             'https://www.spinneyslebanon.com/barilla-spaghetti-n-7-500g-137383-v001.html',
-            'https://www.spinneyslebanon.com/spaghetti-pasta-sp-pr-555438-v002.html'
+            'https://www.spinneyslebanon.com/delverde-linguine-no-12-pasta-500g.html#'
             ]
 
             # scrape urls
