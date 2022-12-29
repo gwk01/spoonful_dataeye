@@ -53,7 +53,7 @@ m = st.markdown("""
 
         height: 2em;
 
-        width: 16em;
+        width: 10em;
 
         border-radius:8px;
 
