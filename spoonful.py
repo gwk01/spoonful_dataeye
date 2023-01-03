@@ -673,7 +673,7 @@ fig.add_scattergeo(
 #fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 with col3:
-
+    st.markdown(f'<p style="text-align:center; color:#FFFFFF;font-family:Arial;font-size:18px;border-radius:0%;">Spoonful Subsidy Food Basket Price (USD):</p>', unsafe_allow_html=True)
     fig.update_layout (title_text = 'Lebanese Districts Poverty Predictions in 2022 <br> by Deploying Satellite Imagery Data on Random Forest Regressor',title_x = 0.55,plot_bgcolor='Light Grey', showlegend=False,
 
                                                 title_font_family="Arial",title_font_size=18)
