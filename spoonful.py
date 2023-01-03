@@ -238,9 +238,9 @@ with col2:
 
 with col3:
     # Determine the number of boxes needed (by geographic region)
-    st.markdown(f'<p style="background-color:#FFFFFF;font-family:Arial;text-align:center; color:#FFFFFF;font-size:10px;border-radius:0%;">The number of vulnerable households: '+ str(round(((lbn_data['Total_Area'][lbn_data['Lebanon_Region']==option_region].item())*(lbn_data['Population_Density'][lbn_data['Lebanon_Region']==option_region].item())/10000)/4)) + '</p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="background-color:#FFFFFF;font-family:Arial;text-align:center; color:#FFFFFF;font-size:10px;border-radius:0%;"> Number of households: '+ str(round(((lbn_data['Total_Area'][lbn_data['Lebanon_Region']==option_region].item())*(lbn_data['Population_Density'][lbn_data['Lebanon_Region']==option_region].item())/10000)/4)) + '</p>', unsafe_allow_html=True)
 
-    st.markdown(f'<p style="background-color:#edfcff;font-family:Arial;text-align:center; color:#1f6ebc;font-size:20px;border-radius:0%;">The number of vulnerable households: '+ str(round(((lbn_data['Total_Area'][lbn_data['Lebanon_Region']==option_region].item())*(lbn_data['Population_Density'][lbn_data['Lebanon_Region']==option_region].item())/10000)/4)) + '</p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="background-color:#edfcff;font-family:Arial;text-align:center; color:#1f6ebc;font-size:20px;border-radius:0%;"> Number of households: '+ str(round(((lbn_data['Total_Area'][lbn_data['Lebanon_Region']==option_region].item())*(lbn_data['Population_Density'][lbn_data['Lebanon_Region']==option_region].item())/10000)/4)) + '</p>', unsafe_allow_html=True)
 #-----------------------------------------------------------------------------#
 # Determine the number of boxes needed (by geographic region)
 # st.markdown(f'<p style="background-color:#edfcff;font-family:Arial;text-align:center; color:#1f6ebc;font-size:30px;border-radius:0%;">The number of vulnerable households: '+ str(round(((lbn_data['Total_Area'][lbn_data['Lebanon_Region']==option_region].item())*(lbn_data['Population_Density'][lbn_data['Lebanon_Region']==option_region].item())/10000)/4)) + '</p>', unsafe_allow_html=True)
