@@ -309,7 +309,7 @@ with col5:
         elif oil_choice == 'Plein Soleil':
             urls.append('https://www.spinneyslebanon.com/sunflower-oil-362165-v001.html')
         elif oil_choice == 'Mazola':
-            urls.append('https://www.spinneyslebanon.com/sunflower-oil-541287-v001.html')
+            urls.append('https://www.spinneyslebanon.com/lesieur-sunflower-oil-2l.html')
         else:
             pass
 
