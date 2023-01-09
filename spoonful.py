@@ -213,6 +213,8 @@ def get_price(links):
 col1, col2, col3 = st.columns([2,5,2])
 with col2:
     st.image('spoonful.png')
+with col3:
+    st.image('escwa_logo.png')   
 # col1, col2, col3 = st.columns([1,5,2])
 # with col1:
 #     st.image('hackathon.jpeg', use_column_width=None)
