@@ -214,6 +214,7 @@ col1, col2, col3 = st.columns([5,2,2])
 with col1:
     st.image('spoonful.png')
 with col3:
+    st.markdown(f'<p style="text-align:center; color:#FFFFFF;font-family:Arial;font-size:8px;border-radius:0%;">Spoonful Subsidy Food Basket Price (USD):</p>', unsafe_allow_html=True)
     st.image('escwa_logo.PNG')   
 # col1, col2, col3 = st.columns([1,5,2])
 # with col1:
