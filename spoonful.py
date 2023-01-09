@@ -210,7 +210,7 @@ def get_price(links):
     return df
 #-----------------------------------------------------------------------------#
 # title
-col1, col2, col3 = st.columns([2,6,2])
+col1, col2, col3 = st.columns([1,6,1])
 with col2:
     st.image('spoonful+escwa.png')
    
