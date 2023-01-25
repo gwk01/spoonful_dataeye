@@ -261,7 +261,7 @@ with col1:
         elif milk_choice == 'Regilait':
             urls.append('https://www.spinneyslebanon.com/regilait-instant-low-fat-milk-powder-14-fat-800g.html')
         elif milk_choice == 'Nido':
-            urls.append('https://www.spinneyslebanon.com/sachet-powder-milk-188911-v001.html')
+            urls.append('https://www.spinneyslebanon.com/default/powder-milk-full-cream-526912-v001.html')
         else:
             pass
 with col2:
