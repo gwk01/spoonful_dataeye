@@ -235,7 +235,7 @@ with col1:
 
 with col2:
     # Select a region
-    option_region = st.selectbox('Select a region', lbn_data['Lebanon_Region'].unique().tolist())
+    option_region = st.selectbox('Select a district', lbn_data['Lebanon_Region'].unique().tolist())
 
 with col3:
     # Determine the number of boxes needed (by geographic region)
