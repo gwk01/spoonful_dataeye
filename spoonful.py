@@ -382,7 +382,7 @@ with col2:
         if milk_choice != 'None of these brands':
             urls = ['https://www.spinneyslebanon.com/powder-milk-147016-v001.html',
             'https://www.spinneyslebanon.com/regilait-instant-low-fat-milk-powder-14-fat-800g.html',
-            'https://www.spinneyslebanon.com/sachet-powder-milk-188911-v001.html'
+            'https://www.spinneyslebanon.com/default/powder-milk-full-cream-526912-v001.html'
             ]
 
             # scrape urls
