@@ -381,7 +381,7 @@ with col2:
         # st.header('Optimized food item brands:')
         if milk_choice != 'None of these brands':
             urls = ['https://www.spinneyslebanon.com/powder-milk-147016-v001.html',
-            'https://www.spinneyslebanon.com/regilait-instant-low-fat-milk-powder-14-fat-800g.html',
+            'https://www.spinneyslebanon.com/default/milk-powder-full-cream.html',
             'https://www.spinneyslebanon.com/default/powder-milk-full-cream-526912-v001.html'
             ]
 
