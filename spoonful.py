@@ -648,7 +648,7 @@ fig.update_geos(fitbounds="geojson")
 fig.update_layout(showlegend=True,coloraxis_showscale=True)
 
 
-fig.add_scattergeo(  geojson=counties,  locations = lbn_data['Lebanon_Region'],  text = lbn_data['Lebanon_Region'],    textfont=dict(family="arial black",size=10,color="Grey"), mode = 'text')
+fig.add_scattergeo(  geojson=counties,  locations = lbn_data['Lebanon_Region'],  text = lbn_data['Lebanon_Region'],    textfont=dict(family="arial black",size=8,color="#D3D3D3"), mode = 'text')
 #fig.add_scattergeo(  geojson=counties,  locations = lbn_data['Lebanon_Region'],  text = round(lbn_data['predictions'],2),    textfont=dict(family="arial black",size=10,color="Grey"), mode = 'text')
 #-----------------------------------------------------------------------------#
 #fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
@@ -668,7 +668,7 @@ with col4:
     # Update the color axis to show only the upper and lower values
     fig.update_layout(coloraxis_colorbar=dict(
         tickvals=[colorscale_min, colorscale_max],
-        ticktext=['Extremely Low', 'Extremely High'],
+        ticktext=['Low', 'Extremely High'],
         tickmode='array',
         #tickfont=dict(size=14),
         ticklabelposition='outside',
