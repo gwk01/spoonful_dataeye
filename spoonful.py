@@ -677,7 +677,7 @@ with col4:
     st.markdown(f'<p style="text-align:center; color:#FFFFFF;font-family:Arial;font-size:8px;border-radius:0%;">Spoonful Subsidy Food Basket Price (USD):</p>', unsafe_allow_html=True)
     fig.update_layout (plot_bgcolor='Light Grey', showlegend=False)
     fig.update_layout(title={
-        'text': "Real-Time Lebanese Districts Poverty Predictions <br> by Deploying Satellite Imagery Data on Random Forest Regressor",
+        'text': "Real-Time Poverty Predictions for Lebanese Districts <br> using Satellite Imagery Data and Machine Learning",
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
