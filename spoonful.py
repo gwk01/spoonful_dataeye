@@ -156,7 +156,7 @@ def get_price(links):
             # price
             price = product.find('span', class_='price')
             price = price.get_text(strip=True)
-            price = re.sub('LBP', '', price).strip()
+            price = re.sub('\$ ', '', price).strip()
             prod_price.append(price)
 
             # next delivery date
