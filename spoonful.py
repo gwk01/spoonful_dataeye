@@ -259,7 +259,7 @@ with col1:
         if milk_choice == 'Dano':
             urls.append('https://www.spinneyslebanon.com/powder-milk-147016-v001.html')
         elif milk_choice == 'Regilait':
-            urls.append('https://www.spinneyslebanon.com/default/milk-powder-full-cream.html')
+            urls.append('https://www.spinneyslebanon.com/default/regilait-0per-fat-milk.html')
         elif milk_choice == 'Nido':
             urls.append('https://www.spinneyslebanon.com/default/powder-milk-full-cream-526912-v001.html')
         else:
@@ -273,7 +273,7 @@ with col2:
         elif pasta_choice == 'Barilla':
             urls.append('https://www.spinneyslebanon.com/barilla-spaghetti-n-7-500g-137383-v001.html')
         elif pasta_choice == 'Pezzullo':
-            urls.append('https://www.spinneyslebanon.com/spaghetti-pasta-555438-v001.html')
+            urls.append('https://www.spinneyslebanon.com/default/delverde-linguine-no-12-pasta-500g.html')
         else:
             pass
 
@@ -347,7 +347,8 @@ with col1:
 
           # summing the prices to get the total price of the food basket
           final_price_lbp = round(sum(col_list))
-          final_price_usd = round(final_price_lbp/30300, 2)
+          final_price_usd = final_price_lbp
+          #final_price_usd = round(final_price_lbp/30300, 2) # no need since prices are in USD on the webiste
           #st.write(round(final_price))
           #st.write('Total basket price in USD: ', final_price_usd)
 
