@@ -645,7 +645,7 @@ fig = px.choropleth(lbn_data, geojson=counties, locations='Lebanon_Region', colo
                           )
 
 fig.update_geos(fitbounds="geojson")
-fig.update_layout(showlegend=False,coloraxis_showscale=False)
+fig.update_layout(showlegend=True,coloraxis_showscale=False)
 
 
 fig.add_scattergeo(  geojson=counties,  locations = lbn_data['Lebanon_Region'],  text = lbn_data['Lebanon_Region'],    textfont=dict(family="arial black",size=10,color="Grey"), mode = 'text')
