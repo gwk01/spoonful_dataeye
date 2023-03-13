@@ -662,4 +662,16 @@ with col4:
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
+    colorscale_min = lbn_data['predictions'].min()
+    colorscale_max = lbn_data['predictions'].max()
+
+    # Update the color axis to show only the upper and lower values
+    fig.update_layout(coloraxis_colorbar=dict(
+        tickvals=[colorscale_min, colorscale_max],
+        ticktext=['Extremely Low', 'Extremely High'],
+        tickmode='array',
+        #tickfont=dict(size=14),
+        ticklabelposition='outside',
+        ticks='outside'
+    ))
     st.plotly_chart(fig)
