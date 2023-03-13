@@ -547,7 +547,7 @@ with col2:
             pass
         # calculating the optimized price of the basket
         optimized_price_of_basket = sum(optimized_prices)
-        optimized_price_of_basket = optimized_price_of_basket/30300
+        #optimized_price_of_basket = optimized_price_of_basket/30300 # no need, prices are in USD
         optimized_price_of_basket = round(optimized_price_of_basket,2)
         #st.write('Total basket price in USD: ', optimized_price_of_basket)
 
